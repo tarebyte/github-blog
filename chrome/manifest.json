@@ -1,0 +1,14 @@
+{
+  "name": "GitHub Blog",
+  "version": "1.0.0",
+  "description": "Put back the GitHub Blog onto your header",
+  "content_scripts": [{
+    "js": ["js/jquery.min.js", "js/new-github.js"],
+    "matches": ["https://github.com/**"]
+  }],
+  "permissions": [
+    "storage",
+    "https://github.com/*/*"
+  ],
+  "manifest_version": 2
+}
